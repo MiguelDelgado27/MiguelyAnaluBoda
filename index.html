@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Miguel &amp; Ana — Nuestra Boda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1c1c19",
+              primary: "#864e55",
+              "primary-container": "#ffdcde",
+              background: "#fcf9f4",
+              "inverse-on-surface": "#f3f0eb",
+              "surface-container-low": "#f6f3ee",
+              "surface-container": "#f0ede9",
+              "on-primary-fixed-variant": "#6b373e",
+              "inverse-primary": "#fcb4bb",
+              "on-secondary-fixed": "#231a11",
+              "surface-dim": "#dcdad5",
+              "on-secondary-fixed-variant": "#51453a",
+              "tertiary-fixed": "#ccead6",
+              "on-secondary-container": "#706256",
+              surface: "#fcf9f4",
+              "error-container": "#ffdad6",
+              error: "#ba1a1a",
+              "on-background": "#1c1c19",
+              secondary: "#695c50",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fcf9f4",
+              "primary-fixed": "#ffd9dc",
+              "secondary-fixed": "#f2dfd0",
+              "on-tertiary-container": "#516c5c",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e5e2dd",
+              "on-tertiary-fixed-variant": "#324c3e",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#f2dfd0",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#062014",
+              "on-primary-container": "#8f555c",
+              "tertiary-container": "#ceecd8",
+              tertiary: "#496455",
+              "primary-fixed-dim": "#fcb4bb",
+              "on-surface-variant": "#4d453f",
+              "tertiary-fixed-dim": "#b0cdbb",
+              outline: "#7f756e",
+              "on-tertiary": "#ffffff",
+              "surface-tint": "#864e55",
+              "outline-variant": "#d0c4bc",
+              "inverse-surface": "#31302d",
+              "surface-container-high": "#ebe8e3",
+              "surface-variant": "#e5e2dd",
+              "on-primary": "#ffffff",
+              "secondary-fixed-dim": "#d5c3b5",
+              "on-primary-fixed": "#360d14",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              display: ["Noto Serif"],
+              body: ["Plus Jakarta Sans"],
+              label: ["Plus Jakarta Sans"],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="script.js"></script>
+    
+  </head>
+  <body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- Top Navigation Bar -->
+    <header
+      class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-md font-['Noto_Serif'] uppercase tracking-[0.2em] text-lg docked full-width top-0 sticky z-50 no-border tonal-shift-bg flat no shadows flex justify-between items-center w-full px-6 py-4"
+    >
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-[#864e55]" data-icon="menu"
+          >menu</span
+        >
+      </div>
+      <div
+        class="font-['Noto_Serif'] text-xl tracking-widest text-[#864e55] dark:text-[#f4e1d2]"
+      >
+        MIGUEL &amp; ANA LUISA
+      </div>
+      <div class="w-6"></div>
+      <!-- Spacer for symmetry -->
+    </header>
+    <main class="max-w-screen-sm mx-auto px-4 pb-32">
+      <!-- Hero Section -->
+      <section class="pt-12 pb-16 flex flex-col items-center text-center">
+        <div
+          class="relative w-full aspect-[4/5] rounded-t-full overflow-hidden mb-8 shadow-sm"
+        >
+          <img
+            class="w-full h-full object-cover"
+            alt="nuestra sesion de fotos"
+            src="assets/nosotros.webp"
+            />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-[#fcf9f4]/60 to-transparent"
+          ></div>
+        </div>
+        <h1 class="font-display text-5xl text-primary mb-4 tracking-tight">
+          Miguel &amp; Ana Luisa
+        </h1>
+        <p class="font-display italic text-2xl text-secondary mb-2">
+          11.07.2026
+        </p>
+        <div class="flex items-center gap-2 text-tertiary">
+          <span
+            class="material-symbols-outlined text-sm"
+            data-icon="location_on"
+            >location_on</span
+          >
+          <p class="font-body uppercase tracking-[0.3em] text-xs font-semibold">
+            Lima, Perú
+          </p>
+        </div>
+      </section>
+      <!-- Music Card -->
+      <section class="mb-16">
+        <div
+          class="bg-surface-container-lowest rounded-xl p-6 flex items-center justify-between shadow-[0_-4px_40px_rgba(28,28,25,0.04)] border border-outline-variant/10"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed-variant"
+            >
+              <span class="material-symbols-outlined" data-icon="music_note"
+                >music_note</span
+              >
+            </div>
+            <div>
+              <p
+                class="font-label text-[10px] uppercase tracking-widest text-secondary"
+              >
+                Nuestra Canción
+              </p>
+              <p class="font-display italic text-on-surface">
+                Blue — yung kai
+              </p>
+            </div>
+          </div>
+          <button
+            class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:scale-105 transition-transform active:scale-95"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-icon="play_arrow"
+              style="font-variation-settings: 'FILL' 1"
+              >play_arrow</span
+            >
+          </button>
+        </div>
+        <audio id="audioPlayer" style="display: none;">
+          <source src="assets/blue.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+      <section class="relative py-12 px-4" id="countdown">
+        <div class="max-w-md mx-auto text-center space-y-8">
+        <div class="flex flex-col items-center gap-2">
+        <span class="material-symbols-outlined text-primary/40 text-4xl">local_florist</span>
+        <h3 class="font-display text-2xl text-primary">Contando los días que faltan para el día más especial de nuestras vidas.</h3>
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+        <div class="flex flex-col items-center p-4 border border-primary/20 rounded-2xl bg-surface-container-lowest/50">
+        <span class="text-3xl font-display text-primary" id="days">00</span>
+        <span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Días</span>
+        </div>
+        <div class="flex flex-col items-center p-4 border border-primary/20 rounded-2xl bg-surface-container-lowest/50">
+        <span class="text-3xl font-display text-primary" id="hours">00</span>
+        <span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Horas</span>
+        </div>
+        <div class="flex flex-col items-center p-4 border border-primary/20 rounded-2xl bg-surface-container-lowest/50">
+        <span class="text-3xl font-display text-primary" id="minutes">00</span>
+        <span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Minutos</span>
+        </div>
+        <div class="flex flex-col items-center p-4 border border-primary/20 rounded-2xl bg-surface-container-lowest/50">
+        <span class="text-3xl font-display text-primary" id="seconds">00</span>
+        <span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Segundos</span>
+        </div>
+        </div>
+        <div class="flex justify-center">
+        <div class="w-12 h-px bg-outline-variant opacity-40"></div>
+        </div>
+        </div>
+        <script>
+                
+            </script>
+        </section>
+      <!-- Our Story -->
+      <section class="mb-20">
+        <div class="relative">
+          <div
+            class="bg-surface-container-low rounded-2xl overflow-hidden p-8 pt-20"
+          >
+            <h2 class="font-display text-3xl text-primary mb-6 w-3/4">
+              Celebra con nosotros 
+            </h2>
+            <div
+              class="space-y-4 font-body text-on-surface-variant leading-relaxed"
+            >
+              <p>
+                Con mucha alegría queremos compartir contigo este momento tan especial. Tu presencia hará aún más inolvidable el inicio de esta nueva etapa en nuestras vidas.
+              </p>
+            </div>
+            <div class="mt-8 flex justify-end">
+              <span
+                class="material-symbols-outlined text-primary/30 text-5xl"
+                data-icon="auto_stories"
+                >auto_stories</span
+              >
+            </div>
+          </div>
+          <div
+            class="absolute -top-6 sm:-top-12 right-6 w-32 h-40 rounded-lg overflow-hidden shadow-xl rotate-3 border-4 border-white"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="A vintage-style film photograph of a happy couple sharing a moment in a lush Peruvian garden. The lighting is soft and natural, emphasizing the deep botanical greens and cream-colored fabrics. The image has a grainy, nostalgic texture like a cherished heirloom photograph. The mood is intimate and serene, capturing a candid laugh between the two."
+              src="assets/nosotros-frontal.jpeg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Event Details -->
+      <section class="space-y-12 mb-20" id="evento">
+        <div class="text-center mb-8">
+          <h2 class="font-display text-4xl text-primary">El Evento</h2>
+          <div class="w-12 h-px bg-outline-variant mx-auto mt-4"></div>
+        </div>
+        <!-- La Ceremonia -->
+        <div
+          class="bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/20 shadow-sm relative overflow-hidden"
+        >
+          <div class="absolute top-0 right-0 p-4 opacity-10">
+            <span class="material-symbols-outlined text-6xl" data-icon="church"
+              >church</span
+            >
+          </div>
+          <p
+            class="font-label text-xs uppercase tracking-[0.2em] text-tertiary mb-2 font-bold"
+          >
+            La Ceremonia
+          </p>
+          <h3 class="font-display text-2xl mb-4">Parroquia Cristo Salvador</h3>
+          <div class="space-y-3 font-body text-secondary">
+            <div class="flex items-center gap-3">
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="calendar_today"
+                >calendar_today</span
+              >
+              <span>11 de Julio, 2026</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="schedule"
+                >schedule</span
+              >
+              <span>15:30 Horas</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="location_on"
+                >location_on</span
+              >
+              <span>Urb. Chama, Surco</span>
+            </div>
+          </div>
+          <button
+            class="mt-8 text-primary font-semibold text-sm flex items-center gap-2 hover:underline"
+          >
+          <a href="https://maps.app.goo.gl/hn3ehv5ZicZE4h2W8" target="_blank">
+            Ver en Google Maps
+            <span
+              class="material-symbols-outlined text-xs"
+              data-icon="arrow_forward"
+              >arrow_forward</span
+            >
+          </a>
+          </button>
+        </div>
+        <!-- La Recepción -->
+        <div
+          class="bg-surface-container-highest/30 rounded-2xl p-8 border border-outline-variant/20 shadow-sm relative overflow-hidden"
+        >
+          <div class="absolute top-0 right-0 p-4 opacity-10 text-primary">
+            <span
+              class="material-symbols-outlined text-6xl"
+              data-icon="celebration"
+              >celebration</span
+            >
+          </div>
+          <p
+            class="font-label text-xs uppercase tracking-[0.2em] text-tertiary mb-2 font-bold"
+          >
+            La Recepción
+          </p>
+          <h3 class="font-display text-2xl mb-4">Casa Jardin - La Cascada</h3>
+          <div class="space-y-3 font-body text-secondary">
+            <div class="flex items-center gap-3">
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="schedule"
+                >schedule</span
+              >
+              <span>18:00 Horas</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="local_bar"
+                >local_bar</span
+              >
+              <span>Cena y Fiesta</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="location_on"
+                >location_on</span
+              >
+              <span>Doña Rosa, Santiago de Surco</span>
+            </div>
+          </div>
+          <div
+            class="mt-8 rounded-xl overflow-hidden h-48 relative border border-outline-variant/30"
+          >
+            <img
+              class="w-full h-full object-cover scale-110"
+              data-alt="A stylized, artistic map illustration of the Sacsayhuamán area in Cusco, Peru. The map uses a sophisticated color palette of cream, terracotta, and botanical green. Small, elegant icons mark the Cathedral and the Hacienda. The style is minimalist and high-end editorial, looking more like a piece of stationery than a digital map. Soft textures suggest hand-pressed paper."
+              data-location="Sacsayhuaman, Cusco"
+              src="assets/croquis.webp"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-on-surface/10 backdrop-blur-[1px]"
+            >
+              <button>
+                <a href="https://maps.app.goo.gl/T4SMe2hebbY5CMmQ9" target="_blank">
+                  <div
+                  class="bg-white/90 px-4 py-2 rounded-full shadow-lg flex items-center gap-2
+                  hover:bg-white hover:shadow-2xl hover:scale-110 transition-all duration-300 ease-out active:scale-95"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-sm"
+                    data-icon="map"
+                    >map</span
+                  >
+                  <span class="text-xs font-bold uppercase tracking-wider"
+                    >Explorar Mapa</span
+                  >
+                </div>
+                </a>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Dress Code -->
+      <section class="relative mb-20" id="dress-code">
+        <div class="bg-tertiary text-on-tertiary rounded-3xl p-8 text-center space-y-4 shadow-xl">
+        <span class="material-symbols-outlined text-4xl">checkroom</span>
+        <h3 class="font-display text-2xl uppercase tracking-widest">Código de Vestimenta</h3>
+        <div class="w-12 h-px bg-on-tertiary/30 mx-auto"></div>
+        <p class="font-headline text-xl italic">Formal de noche</p>
+        <p class="text-on-tertiary/80 text-sm leading-relaxed px-4">
+            Caballeros con traje. Damas con vestido <br/>
+        <span class="text-xs opacity-60 mt-2 block">Abstenerse colores en tono blanco/beige</span>
+        </p>
+        <div class="flex justify-center">
+          <div class="bg-[#F9F8F7]">
+            <img
+              class="h-64 object-cover rounded-xl border border-on-tertiary/20"
+              alt="A fashion editorial photograph"
+              src="assets/dresscode.png"
+            />
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- RSVP Form -->
+      <!-- <section class="mb-20" id="RSVP">
+        <div class="bg-surface-container rounded-3xl p-10 text-center">
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4"
+            data-icon="mail"
+            >mail</span
+          >
+          <h2 class="font-display text-3xl mb-2">Confirmar Asistencia</h2>
+          <p class="font-body text-on-surface-variant mb-8">
+            Por favor, confírmanos tu presencia antes del 15 de Agosto.
+          </p>
+          <form class="space-y-6 text-left">
+            <div>
+              <label
+                class="block font-label text-xs uppercase tracking-widest text-secondary mb-2 ml-1"
+                >Nombre Completo</label
+              >
+              <input
+                class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-1 focus:ring-primary placeholder:text-outline-variant/50"
+                placeholder="Ej. Ana García"
+                type="text"
+              />
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <button
+                class="bg-primary text-on-primary py-4 rounded-xl font-semibold shadow-sm flex items-center justify-center gap-2"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="check"
+                  >check</span
+                >
+                Asistiré
+              </button>
+              <button
+                class="bg-surface-container-lowest text-secondary py-4 rounded-xl font-semibold border border-outline-variant/30"
+                type="button"
+              >
+                No podré ir
+              </button>
+            </div>
+            <div>
+              <label
+                class="block font-label text-xs uppercase tracking-widest text-secondary mb-2 ml-1"
+                >Requerimientos Dietéticos</label
+              >
+              <textarea
+                class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-1 focus:ring-primary placeholder:text-outline-variant/50 h-24"
+                placeholder="Alergias, veganismo, etc."
+              ></textarea>
+            </div>
+            <button
+              class="w-full bg-on-surface text-background py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:opacity-90 transition-opacity"
+            >
+              Enviar Confirmación
+            </button>
+          </form>
+        </div>
+      </section> -->
+      <!-- Regalos -->
+      <section class="mb-32">
+        <div class="text-center mb-10">
+          <h2 class="font-display text-3xl text-primary">Lista de Regalos</h2>
+          <p class="font-body text-secondary italic mt-2">
+            Si deseas tener un detalle, aquí encontrarás algunas opciones especiales para esta nueva etapa juntos.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Shopping Links -->
+          <div
+            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/20 shadow-sm flex flex-col items-center text-center"
+          >
+            <span
+              class="material-symbols-outlined text-tertiary mb-4"
+              data-icon="shopping_bag"
+              >shopping_bag</span
+            >
+            <p class="font-body text-on-surface mb-6">
+              Encuentra nuestra lista de deseos en la siguiente tienda:
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a
+                class="bg-[#F4F2EF] px-6 py-4 border border-outline-variant rounded-full text-xs font-bold tracking-widest hover:bg-surface-container transition-colors"
+                href="https://dparte.wedding/miguelyana/registry"
+                target="_blank"
+                >
+                <img
+                  src="assets/logo-inline-green.webp"
+                  alt="Target"
+                  class="h-4"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Honeymoon Fund -->
+          <div
+            class="bg-primary-container/30 p-8 rounded-2xl border border-primary/10 flex flex-col items-center text-center"
+          >
+            <span
+              class="material-symbols-outlined text-primary mb-4"
+              data-icon="flight_takeoff"
+              >flight_takeoff</span
+            >
+            <h3 class="font-display text-xl mb-3">Luna de Miel</h3>
+            <p
+              class="font-body text-on-primary-container text-sm leading-relaxed mb-6"
+            >
+              Si deseas contribuir a nuestro primer viaje como esposos, puedes
+              hacerlo a través de transferencia bancaria.
+            </p>
+            <div
+              class="bg-white/50 backdrop-blur-sm p-4 rounded-xl w-full border border-primary/5"
+            >
+              <p
+                class="text-[10px] uppercase tracking-widest text-secondary mb-1"
+              >
+                BCP Soles (Perú)
+              </p>
+              <p class="font-mono text-sm select-all mb-2">194-90116810-0-79</p>
+              <p
+              class="text-[10px] uppercase tracking-widest text-secondary mb-1"
+            >
+              BCP Soles (CCI)
+            </p>
+            <p class="font-mono text-sm select-all">002-19311574834701918</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <button onclick="mostrarRSVP()" 
+          class="bg-primary text-white px-8 py-3 rounded-full
+                font-sans tracking-wide 
+                hover:opacity-90 transition">
+          Confirmar asistencia
+        </button>
+      </section>
+      <section id="rsvp" class="opacity-0 translate-y-6 transition-all duration-[2000ms] ease-out hidden py-20 px-6 bg-neutral">
+
+        <div class="max-w-2xl mx-auto text-center mb-10">
+          <h2 class="text-4xl font-serif text-tertiary mb-3">
+            Confirma tu asistencia
+          </h2>
+          <p class="text-tertiary/70 font-sans">
+            Será un honor contar contigo en este día tan especial
+          </p>
+        </div>
+      
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-[#e6dccf]">
+        <!-- src="https://docs.google.com/forms/d/e/1FAIpQLSdHITyPBs0TcO_ga8-dP2F2_Zd5MP0D6X4vhDQqDYncUIjCqw/viewform?usp=publish-editor" -->
+
+        <!-- <iframe width="640px" height="480px" src="https://forms.cloud.microsoft/r/LrCtPhke8Z?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>         -->
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdHITyPBs0TcO_ga8-dP2F2_Zd5MP0D6X4vhDQqDYncUIjCqw/viewform?usp=publish-editor"
+            class="w-full"
+            style="height: 75vh; border: none;">
+          </iframe>
+      
+        </div>
+      
+        <p class="text-center mt-6 text-sm text-tertiary/60">
+          ¿Tienes problemas?
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHITyPBs0TcO_ga8-dP2F2_Zd5MP0D6X4vhDQqDYncUIjCqw/viewform?usp=publish-editor" target="_blank" class="underline text-primary">
+            Abrir formulario
+          </a>
+        </p>
+      
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-[#f0ede9] dark:bg-[#1c1c19] text-[#496455] dark:text-[#f4e1d2] font-['Plus_Jakarta_Sans'] text-xs tracking-wide full-width p-12 tonal-shift-bg flat flex flex-col items-center gap-6 w-full text-center pb-24"
+    >
+      <div class="font-['Noto_Serif'] italic text-[#864e55] text-2xl">
+        M &amp; A
+      </div>
+      <div class="flex gap-8">
+        <a class="no-underline hover:text-[#864e55] transition-colors" href="#"
+          >Mesa de Regalos</a
+        >
+        <a class="no-underline hover:text-[#864e55] transition-colors" href="#"
+          >Playlist de Boda</a
+        >
+      </div>
+      <p class="opacity-60">2024 Miguel &amp; Ana Luisa — Hecho con amor</p>
+    </footer>
+    <!-- Bottom Navigation Bar -->
+    <nav
+      class="bg-[#fcf9f4]/90 dark:bg-[#1c1c19]/90 backdrop-blur-lg text-[#864e55] dark:text-[#f4e1d2] font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-tighter docked full-width bottom-0 rounded-t-3xl tonal-shift-bg shadow-[0_-4px_40px_rgba(28,28,25,0.04)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 md:hidden"
+    >
+      <a
+        class="flex flex-col items-center justify-center text-[#864e55] scale-110 transition-transform"
+        href="#"
+      >
+        <span
+          class="material-symbols-outlined mb-1"
+          data-icon="favorite"
+          style="font-variation-settings: 'FILL' 1"
+          >favorite</span
+        >
+        <span>Inicio</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-[#496455] opacity-60 hover:opacity-100"
+        href="#"
+      >
+        <span class="material-symbols-outlined mb-1" data-icon="auto_stories"
+          >auto_stories</span
+        >
+        <span>Historia</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-[#496455] opacity-60 hover:opacity-100"
+        href="#evento"
+      >
+        <span class="material-symbols-outlined mb-1" data-icon="event_note"
+          >event_note</span
+        >
+        <span>Evento</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-[#496455] opacity-60 hover:opacity-100"
+        href="#RSVP"
+      >
+        <span class="material-symbols-outlined mb-1" data-icon="mail"
+          >mail</span
+        >
+        <span>RSVP</span>
+      </a>
+    </nav>
+  </body>
+</html>
